@@ -7,7 +7,7 @@
 <!--![compat3](_media/compat_3.png)-->
 ![Joomla3x](https://img.shields.io/badge/Joomla!-3.x-yellow ':no-zoom')
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/papermanagertest/papermanagertest ':no-zoom')
-![License](https://img.shields.io/github/license/papermanagertest/papermanagertest ':no-zoom')
+![License](https://img.shields.io/github/license/papermanager/papermanager ':no-zoom')
 
 - Manage academic publications.
 - Query the publications and generate custom filtered<br />and sorted publication lists.
