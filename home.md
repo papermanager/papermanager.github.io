@@ -66,10 +66,34 @@ The Paper Manager component lets the user manage the paper collection. It offers
 </p>
 
 - Navigate to *Components &#8594; Paper Manager Lite &#8594; Papers* and add the following entries:
-  - Title: `Paper 1`, Authors: `{Author 2, Author 4, Author 5}`, Category: `Journal Publications`, Year: `2013`, Month: `April`, Produced in Lab: `Not Checked`, HTML Text: `Author 2, Author 4, Author 5. Paper 1. Journal of Something 10(1):25-35`
-  - Title: `Paper 2`, Authors: `{Author 1, Author 3, Author 5}`, Category: `Journal Publications`, Year: `2014`, Month: `January`, Produced in Lab: `Checked`, HTML Text: `Author 1, Author 3, Author 5. Paper 2. Journal of Something Else 25(3):36-55`
-  - Title: `Paper 3`, Authors: `{Author 1, Author 3, Author 4}`, Category: `Journal Publications`, Year: `2013`, Month: `February`, Produced in Lab: `Checked`, HTML Text: `Author 1, Author 3, Author 4. Paper 3. Journal of Something Different 6(4):28-49`
-  - Title: `Paper 4`, Authors: `{Author 2, Author 3, Author 4}`, Category: `Conference Publications`, Year: `2013`, Month: `August`, Produced in Lab: `Checked`, HTML Text: `Author 2, Author 4, Author 5. Paper 4. 5th International Conference of Something, Athens, Greece, July 5-6, 2013`
+  - Title: `Paper 1`,<br />
+    Authors: `{Author 2, Author 4, Author 5}`,<br />
+    Category: `Journal Publications`,<br />
+    Year: `2013`,<br />
+    Month: `April`,<br />
+    Produced in Lab: `Not Checked`,<br />
+    HTML Text: `Author 2, Author 4, Author 5. Paper 1. Journal of Something 10(1):25-35`
+  - Title: `Paper 2`,<br />
+    Authors: `{Author 1, Author 3, Author 5}`,<br />
+    Category: `Journal Publications`,<br />
+    Year: `2014`,<br />
+    Month: `January`,<br />
+    Produced in Lab: `Checked`,<br />
+    HTML Text: `Author 1, Author 3, Author 5. Paper 2. Journal of Something Else 25(3):36-55`
+  - Title: `Paper 3`,<br />
+    Authors: `{Author 1, Author 3, Author 4}`,<br />
+    Category: `Journal Publications`,<br />
+    Year: `2013`,<br />
+    Month: `February`,<br />
+    Produced in Lab: `Checked`,<br />
+    HTML Text: `Author 1, Author 3, Author 4. Paper 3. Journal of Something Different 6(4):28-49`
+  - Title: `Paper 4`,<br />
+    Authors: `{Author 2, Author 3, Author 4}`,<br />
+    Category: `Conference Publications`,<br />
+    Year: `2013`,<br />
+    Month: `August`,<br />
+    Produced in Lab: `Checked`,<br />
+    HTML Text: `Author 2, Author 4, Author 5. Paper 4. 5th International Conference of Something, Athens, Greece, July 5-6, 2013`
 
 <p align="center">
   <img alt="PaperManagerPaper" src="_media/paper_manager_tutorial_paper_small.png" title="Paper Manager Paper" />
