@@ -167,7 +167,7 @@ The style of the code that will wrap papers lists. It can get the values `ul | o
 <ul class="papermanager_front_list">
      <li class="papermanager_front_list_item">Item 1</li>
      <li class="papermanager_front_list_item">Item 2</li>
-     …
+     ...
      <li class="papermanager_front_list_item">Item n</li>
 </ul>
 ```
@@ -178,7 +178,7 @@ The style of the code that will wrap papers lists. It can get the values `ul | o
 <ol class="papermanager_front_list">
      <li class="papermanager_front_list_item">Item 1</li>
      <li class="papermanager_front_list_item">Item 2</li>
-     …
+     ...
      <li class="papermanager_front_list_item">Item n</li>
 </ol>
 ```
@@ -189,7 +189,7 @@ The style of the code that will wrap papers lists. It can get the values `ul | o
 <ol reversed="" class="papermanager_front_list">
      <li class="papermanager_front_list_item">Item 1</li>
      <li class="papermanager_front_list_item">Item 2</li>
-     …
+     ...
      <li class="papermanager_front_list_item">Item n</li>
 </ol>
 ```
@@ -200,14 +200,14 @@ The style of the code that will wrap papers lists. It can get the values `ul | o
 <div class="papermanager_front_list">
      <div class="papermanager_front_list_item">Item 1</div>
      <div class="papermanager_front_list_item">Item 2</div>
-     …
+      ...
      <div class="papermanager_front_list_item">Item n</div>
 </div>
 ```
 
 As it can be noticed, certain CSS classes are assigned to the generated HTML code to provide a way of stylizing the output. The following CSS rules can be used as a template:
 
-```html
+```css
 ul.papermanager_front_list{
 }
 ul.papermanager_front_list li.papermanager_front_list_item{
