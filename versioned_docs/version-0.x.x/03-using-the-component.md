@@ -1,6 +1,6 @@
 # Using the component
 
-The Paper Manager component lets the user manage the paper collection. It offers three CRUD editors. One for the paper categories, another for the authors and a third one for the papers themselves. Each can be accessed from the administration by navigating to *Components &#8594; Paper Manager Lite &#8594; Categories*, *Components &#8594; Paper Manager Lite &#8594; Authors* and *Components &#8594; Paper Manager Lite &#8594; Papers* respectively. Each item in these lists has the following fields:
+The Paper Manager component lets the user manage the paper collection. It offers three CRUD editors. One for the paper categories, another for the authors and a third one for the papers themselves. Each can be accessed from the administration by navigating to *Components &#8594; Paper Manager &#8594; Categories*, *Components &#8594; Paper Manager &#8594; Authors* and *Components &#8594; Paper Manager &#8594; Papers* respectively. Each item in these lists has the following fields:
 
 - Categories
   - `ID`: Record number in the database.
@@ -24,7 +24,7 @@ The Paper Manager component lets the user manage the paper collection. It offers
 
 ### Getting started with the Paper Manager component
 
-- From the administration, navigate to *Components &#8594; Paper Manager Lite &#8594; Categories* and add the following entries:
+- From the administration, navigate to *Components &#8594; Paper Manager &#8594; Categories* and add the following entries:
   - Title: `Journal Publications`
   - Title: `Conference Publications`
 
@@ -32,7 +32,7 @@ The Paper Manager component lets the user manage the paper collection. It offers
   <img alt="PaperManagerCategories" src="/img/paper_manager_tutorial_categories_small.png" title="Paper Manager Categories" />
 </p>
 
-- Navigate to *Components &#8594; Paper Manager Lite &#8594; Authors* and add the following entries:
+- Navigate to *Components &#8594; Paper Manager &#8594; Authors* and add the following entries:
   - Name: `Author 1`
   - Name: `Author 2`
   - Name: `Author 3`
@@ -43,7 +43,7 @@ The Paper Manager component lets the user manage the paper collection. It offers
   <img alt="PaperManagerAuthors" src="/img/paper_manager_tutorial_authors_small.png" title="Paper Manager Authors" />
 </p>
 
-- Navigate to *Components &#8594; Paper Manager Lite &#8594; Papers* and add the following entries:
+- Navigate to *Components &#8594; Paper Manager &#8594; Papers* and add the following entries:
   - Title: `Paper 1`,<br />
     Authors: `{Author 2, Author 4, Author 5}`,<br />
     Category: `Journal Publications`,<br />

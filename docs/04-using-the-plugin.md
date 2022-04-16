@@ -2,9 +2,9 @@
 
 The Paper Manager plugin loads Paper Manager publications within content (ex. articles). It works in a similar way with the *Content - Load Modules* plugin, which is included in the core Joomla distribution. Special code snippets are used in the content that are translated into HTML code in the front-end (lists of papers in our occasion).
 
-You have to enable the plugin before using it. To do this, navigate to *Extensions &#8594; Plugin Manager* and enable *Content - Paper Manager Lite Plugin*.
+You have to enable the plugin before using it. To do this, navigate to *System &#8594; Manage &#8594; Plugins* and enable *Content - Paper Manager Plugin*.
 
-From the same page (*Extensions &#8594; Plugin Manager &#8594; Content - Paper Manager Lite Plugin*), the plugin's [default parameters](#plugin-parameters) can also be edited.
+From the same page (*System &#8594; Manage &#8594; Plugins &#8594; Content - Paper Manager Plugin*), the plugin's [default parameters](#plugin-parameters) can also be edited.
 
 ### Getting started with the Paper Manager plugin
 
@@ -73,7 +73,7 @@ To omit a constraint from the query its value should be set to `any`. authors, c
 
 ### Plugin parameters
 
-To edit the parameters of the plugin, navigate to *Extensions &#8594; Plugin Manager &#8594; Content - Paper Manager Lite Plugin*.
+To edit the parameters of the plugin, navigate to *System &#8594; Manage &#8594; Plugins &#8594; Content - Paper Manager Plugin*.
 
 #### Style
 

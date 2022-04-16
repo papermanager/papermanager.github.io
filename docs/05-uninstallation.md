@@ -1,4 +1,5 @@
 # Uninstallation
 
-1. From the administration of your Joomla website navigate to *Extensions &#8594; Extension Manager* and select *Manage* from the menu on the left.
-2. Uninstall *Paper Manager Lite Package*. If you get an error message uninstall *Content - Paper Manager Lite Plugin* and/or *Paper Manager Lite* as well.
+1. From the administration of your Joomla website navigate to *System &#8594; Manage &#8594; Extensions*.
+2. Find and check *Paper Manager - Package* from the list.
+3. Uninstall *Paper Manager - Package*. If you get an error message uninstall *Content - Paper Manager Plugin* and/or *Paper Manager* as well.
