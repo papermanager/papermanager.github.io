@@ -14,7 +14,8 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'papermanager', // Usually your GitHub org/user name.
-  projectName: 'papermanager', // Usually your repo name.
+  projectName: 'papermanager.github.io', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
 
   presets: [
     [
