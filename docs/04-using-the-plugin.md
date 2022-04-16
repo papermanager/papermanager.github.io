@@ -1,0 +1,141 @@
+# Using the plugin
+
+The Paper Manager plugin loads Paper Manager publications within content (ex. articles). It works in a similar way with the *Content - Load Modules* plugin, which is included in the core Joomla distribution. Special code snippets are used in the content that are translated into HTML code in the front-end (lists of papers in our occasion).
+
+You have to enable the plugin before using it. To do this, navigate to *Extensions &#8594; Plugin Manager* and enable *Content - Paper Manager Lite Plugin*.
+
+From the same page (*Extensions &#8594; Plugin Manager &#8594; Content - Paper Manager Lite Plugin*), the plugin's [default parameters](#plugin-parameters) can also be edited.
+
+### Getting started with the Paper Manager plugin
+
+- From the article manager, create an article titled *Journal Publications* and a menu item of the same name targeting this single article.
+- Edit this article and insert the following code in its content:
+
+```html
+{loadpapers:authors=any:categories=1:years=any:months=any:lab=1:style=olreversed}
+```
+
+<p align="center">
+  <img alt="PaperManagerPlugin" src="/img/paper_manager_plugin_tutorial_1_small.png" title="Paper Manager Plugin" />
+</p>
+
+- From the article manager, create an article titled *Author 2* and a menu item of the same name targeting this single article.
+- Edit this article and insert the following code in its content:
+
+```html
+{loadpapers:authors=2:categories=any:years=any:months=any:lab=any:style=olreversed}
+```
+
+<p align="center">
+  <img alt="PaperManagerPlugin" src="/img/paper_manager_plugin_tutorial_3_small.png" title="Paper Manager Plugin" />
+</p>
+
+- Create two menu items pointing to the two newly created articles.
+
+<p align="center">
+  <img alt="PaperManagerPlugin" src="/img/paper_manager_plugin_tutorial_2_small.png" title="Paper Manager Plugin" />
+</p>
+
+<p align="center">
+  <img alt="PaperManagerPlugin" src="/img/paper_manager_plugin_tutorial_4_small.png" title="Paper Manager Plugin" />
+</p>
+
+### Code snippets syntax
+
+Code snippets should be written in the following form. Each snippet works as a query to the plugin. The plugin process the queries, retrieves the appropriate papers and generates the HTML code for each query/paper list.
+
+```html
+{loadpapers:authors=X:categories=X:years=X:months=X:lab=X:style=X}
+```
+
+*X* denotes a value. Six constraints are used in a single snippet:
+
+- **authors**: The ID of a single author or the IDs multiple authors separated by comma.
+  - Value range: `1 | ... | n | any`
+  - Example: `1,20,12,23`
+- **categories**: The ID of a single category or the IDs multiple categories separated by comma.
+  - Value range: `1 | ... | n | any`
+  - Example: `1,20,12,23`
+- **years**: A single year (four digit format) or multiple years separated by comma.
+  - Value range: `YYYY | any`
+  - Example: `2013,2014`
+- **months**: A single month (range from 1 to 12 format) or multiple months separated by comma.
+  - Value range: `1 | ... | 12 | any`
+  - Example: `7`
+- **lab**: Defines whether to retrieve papers produced in the lab or outside of it. Value 1 stands for *produced in the lab* and 2 for *not produced in the lab*.
+  - Value range: `1 | 2 | any`
+  - Example: `1,20,12,23`
+- **style**: The code that will wrap the papers lists. ( [more...](#style) )
+  - Value range: `ul | ol | olreversed | div | none | default`
+  - Example: `olreversed`
+
+To omit a constraint from the query its value should be set to `any`. authors, categories, years, months and lab can be set to `any` if you don't want to constrain the output to some specific value. `any` does not work for style though. style accepts the value `default` in order to make use of the style set in the [plugin's parameters](#plugin-parameters).
+
+### Plugin parameters
+
+To edit the parameters of the plugin, navigate to *Extensions &#8594; Plugin Manager &#8594; Content - Paper Manager Lite Plugin*.
+
+#### Style
+
+The style of the code that will wrap papers lists. It can get the values `ul | ol | olreversed | div | none | default`. Each style outputs the following HTML code:
+
+##### `ul` - Wrapped by unordered list
+
+```html
+<ul class="papermanager_front_list">
+     <li class="papermanager_front_list_item">Item 1</li>
+     <li class="papermanager_front_list_item">Item 2</li>
+     ...
+     <li class="papermanager_front_list_item">Item n</li>
+</ul>
+```
+
+##### `ol` - Wrapped by ordered list
+
+```html
+<ol class="papermanager_front_list">
+     <li class="papermanager_front_list_item">Item 1</li>
+     <li class="papermanager_front_list_item">Item 2</li>
+     ...
+     <li class="papermanager_front_list_item">Item n</li>
+</ol>
+```
+
+##### `olreversed` - Wrapped by reverse ordered list
+
+```html
+<ol reversed="" class="papermanager_front_list">
+     <li class="papermanager_front_list_item">Item 1</li>
+     <li class="papermanager_front_list_item">Item 2</li>
+     ...
+     <li class="papermanager_front_list_item">Item n</li>
+</ol>
+```
+
+##### `div` - Wrapped by Divs
+
+```html
+<div class="papermanager_front_list">
+     <div class="papermanager_front_list_item">Item 1</div>
+     <div class="papermanager_front_list_item">Item 2</div>
+      ...
+     <div class="papermanager_front_list_item">Item n</div>
+</div>
+```
+
+As it can be noticed, certain CSS classes are assigned to the generated HTML code to provide a way of stylizing the output. The following CSS rules can be used as a template:
+
+```css
+ul.papermanager_front_list{
+}
+ul.papermanager_front_list li.papermanager_front_list_item{
+}
+ol.papermanager_front_list{
+}
+ol.papermanager_front_list li.papermanager_front_list_item{
+}
+div.papermanager_front_list{
+}
+div.papermanager_front_list div.papermanager_front_list_item{
+}
+```
