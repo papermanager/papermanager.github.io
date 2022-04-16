@@ -11,11 +11,11 @@ The Paper Manager component lets the user manage the paper collection. It offers
 - Papers
   - `ID`: Record number in the database.
   - `Title`: The title of the paper.
-  - `Authors`: List of the paper authors - included in the authors editor.
-  - `Category`: The paper category – included in the categories editor.
+  - `Authors`: List of the paper's authors. Multiple authors can be selected. The authors can be edited in *Components &#8594; Paper Manager &#8594; Authors*.
+  - `Category`: The paper's category. A single category can be selected. The categories can be edited in *Components &#8594; Paper Manager &#8594; Categories*.
   - `Year`: The year of the publication.
   - `Month`: The month of the publication.
-  - `Produced In Lab`: Checkbox – checked if the paper was produced in the lab.
+  - `Produced In Lab`: Checkbox – checked if the paper was produced in the lab. This field is relevant only on research lab or organization websites and not on personal profile websites.
   - `HTML Text`: The HTML text that will be used by the plugin to display the paper entry on the site.
 
 <p align="center">

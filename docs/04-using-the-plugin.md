@@ -1,6 +1,6 @@
 # Using the plugin
 
-The Paper Manager plugin loads Paper Manager publications within content (ex. articles). It works in a similar way with the *Content - Load Modules* plugin, which is included in the core Joomla distribution. Special code snippets are used in the content that are translated into HTML code in the front-end (lists of papers in our occasion).
+The Paper Manager plugin loads Paper Manager publications within content (ex. articles). It works in a similar way with the *Content - Load Modules* plugin, which is included in the core Joomla distribution. Special code snippets are used in the content that are translated into HTML code (lists of papers) in the front-end.
 
 You have to enable the plugin before using it. To do this, navigate to *System &#8594; Manage &#8594; Plugins* and enable *Content - Paper Manager Plugin*.
 
@@ -42,7 +42,7 @@ From the same page (*System &#8594; Manage &#8594; Plugins &#8594; Content - Pap
 
 ### Code snippets syntax
 
-Code snippets should be written in the following form. Each snippet works as a query to the plugin. The plugin process the queries, retrieves the appropriate papers and generates the HTML code for each query/paper list.
+Code snippets should be written in the following form. Each snippet works as a query to the plugin. The plugin processes the queries, retrieves the appropriate papers and generates the HTML code for each query/paper list.
 
 ```html
 {loadpapers:authors=X:categories=X:years=X:months=X:lab=X:style=X}
@@ -50,26 +50,26 @@ Code snippets should be written in the following form. Each snippet works as a q
 
 *X* denotes a value. Six constraints are used in a single snippet:
 
-- **authors**: The ID of a single author or the IDs multiple authors separated by comma.
+- **authors**: The ID of a single author or the IDs of multiple authors separated by comma.
   - Value range: `1 | ... | n | any`
-  - Example: `1,20,12,23`
-- **categories**: The ID of a single category or the IDs multiple categories separated by comma.
+  - Examples: `1,20,12,23`, `any`
+- **categories**: The ID of a single category or the IDs of multiple categories separated by comma.
   - Value range: `1 | ... | n | any`
-  - Example: `1,20,12,23`
+  - Examples: `1,20,12,23`, `any`
 - **years**: A single year (four digit format) or multiple years separated by comma.
   - Value range: `YYYY | any`
-  - Example: `2013,2014`
+  - Examples: `2013,2014`, `any`
 - **months**: A single month (range from 1 to 12 format) or multiple months separated by comma.
   - Value range: `1 | ... | 12 | any`
-  - Example: `7`
+  - Examples: `7`, `any`
 - **lab**: Defines whether to retrieve papers produced in the lab or outside of it. Value 1 stands for *produced in the lab* and 2 for *not produced in the lab*.
   - Value range: `1 | 2 | any`
-  - Example: `1,20,12,23`
+  - Examples: `1`, `2`, `any`
 - **style**: The code that will wrap the papers lists. ( [more...](#style) )
   - Value range: `ul | ol | olreversed | div | none | default`
   - Example: `olreversed`
 
-To omit a constraint from the query its value should be set to `any`. authors, categories, years, months and lab can be set to `any` if you don't want to constrain the output to some specific value. `any` does not work for style though. style accepts the value `default` in order to make use of the style set in the [plugin's parameters](#plugin-parameters).
+To omit a constraint from the query, its value should be set to `any`. *authors*, *categories*, *years*, *months* and *lab* can be set to `any` if you don't want to constrain the output to some specific value. `any` does not work for *style* though. *style* accepts the value `default` in order to make use of the style set in the default [plugin's parameters](#plugin-parameters).
 
 ### Plugin parameters
 
