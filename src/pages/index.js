@@ -22,19 +22,19 @@ function HomepageHeader() {
         </p>
         <div className={styles.buttons}>
           <a
-            className="button button--secondary button--lg"
+            className="button button--secondary button--lg margin--sm"
             href="https://github.com/papermanager/papermanager"
             target="_blank">
             GitHub
           </a>
           <a
-            className="button button--secondary button--lg margin-left--md"
+            className="button button--secondary button--lg margin--sm"
             href="https://github.com/papermanager/papermanager/releases"
             target="_blank">
             Download
           </a>
           <Link
-            className="button button--secondary button--lg margin-left--md"
+            className="button button--secondary button--lg margin--sm"
             to="/docs/introduction-to-paper-manager">
             Get Started
           </Link>
