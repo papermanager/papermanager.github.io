@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import useBaseUrl from '@docusaurus/useBaseUrl'
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -27,14 +28,14 @@ function HomepageHeader() {
             target="_blank">
             GitHub
           </a>
-          <a
-            className="button button--secondary button--lg margin--sm"
-            href="/download">
-            Download
-          </a>
           <Link
             className="button button--secondary button--lg margin--sm"
-            to="/docs/introduction-to-paper-manager">
+            to={useBaseUrl('download')}>
+            Download
+          </Link>
+          <Link
+            className="button button--secondary button--lg margin--sm"
+            to={useBaseUrl('docs/introduction-to-paper-manager')}>
             Get Started
           </Link>
         </div>
