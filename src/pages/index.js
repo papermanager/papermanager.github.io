@@ -29,8 +29,7 @@ function HomepageHeader() {
           </a>
           <a
             className="button button--secondary button--lg margin--sm"
-            href="https://github.com/papermanager/papermanager/releases"
-            target="_blank">
+            href="/download">
             Download
           </a>
           <Link
@@ -41,6 +40,15 @@ function HomepageHeader() {
         </div>
         <div className="margin-top--md">
           ⭐️ If you like Paper Manager, give it a star on <a className={styles.textUnderlineLink} href="https://github.com/papermanager/papermanager" target="_blank">GitHub</a> ⭐️
+        </div>
+        <div className="margin-top--md">
+          <small>
+            <i>
+              Paper Manager is developed for <strong>Joomla 4.x</strong> and any future updates will be checked for compatibility only with <strong>4.x</strong>.
+              <br/>
+              If you need to install Paper Manager on <strong>Joomla 3.x</strong>, use <a className={styles.textUnderlineLink} href="https://github.com/papermanager/papermanager/releases/tag/v0.0.1-joomla3.x" target="_blank">version 0.0.1-joomla3.x</a>.
+            </i>
+          </small>
         </div>
       </div>
     </header>

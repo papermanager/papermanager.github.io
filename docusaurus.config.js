@@ -85,11 +85,11 @@ const config = {
           type: 'docsVersionDropdown',
           position: 'right',
         },
-        // {
-        //   to: '/download',
-        //   label: 'Download',
-        //   position: 'right'
-        // },
+        {
+          to: '/download',
+          label: 'Download',
+          position: 'right'
+        },
         {
           href: 'https://github.com/papermanager/papermanager',
           label: 'GitHub',
