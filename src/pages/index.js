@@ -12,21 +12,25 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <p>
-          <img src="https://img.shields.io/github/v/release/papermanager/papermanager" alt="GitHub release (latest by date)" />
-          <img className="margin-left--xs" src="https://img.shields.io/badge/Joomla!-4.x-yellow" alt="Joomla4x" />
-          <img className="margin-left--xs" src="https://img.shields.io/badge/Joomla!-3.x-yellow" alt="Joomla3x" />
-          <img className="margin-left--xs" src="https://img.shields.io/badge/php-%3E%3D8.0-787CB5" alt="PHP80" />
-          <img className="margin-left--xs" src="https://img.shields.io/github/license/papermanager/papermanager" alt="License" />
-        </p>
-        <div className={styles.buttons}>
+        <div>
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+        </div>
+
+        <div>
+          <img className="margin--xs" src="https://img.shields.io/github/v/release/papermanager/papermanager" alt="GitHub release (latest by date)" />
+          <img className="margin--xs" src="https://img.shields.io/badge/Joomla!-4.x-yellow" alt="Joomla4x" />
+          <img className="margin--xs" src="https://img.shields.io/badge/Joomla!-3.x-yellow" alt="Joomla3x" />
+          <img className="margin--xs" src="https://img.shields.io/badge/php-%3E%3D8.0-787CB5" alt="PHP80" />
+          <img className="margin--xs" src="https://img.shields.io/github/license/papermanager/papermanager" alt="License" />
+        </div>
+
+        <div className={clsx('margin-top--md', styles.buttons)}>
           <a
-            className="button button--secondary button--lg margin--sm"
+            className={clsx('button button--secondary button--lg margin--sm', styles.githubButton)}
             href="https://github.com/papermanager/papermanager"
             target="_blank">
-            GitHub
+            <span className={styles.githubIcon}></span> <span>GitHub</span>
           </a>
           <Link
             className="button button--secondary button--lg margin--sm"
@@ -39,9 +43,11 @@ function HomepageHeader() {
             Get Started
           </Link>
         </div>
+
         <div className="margin-top--md">
           ⭐️ If you like Paper Manager, give it a star on <a className={styles.textUnderlineLink} href="https://github.com/papermanager/papermanager" target="_blank">GitHub</a> ⭐️
         </div>
+
         <div className="margin-top--md">
           <small>
             <i>

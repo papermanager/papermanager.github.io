@@ -90,10 +90,16 @@ const config = {
           label: 'Download',
           position: 'right'
         },
+        // {
+        //   href: 'https://github.com/papermanager/papermanager',
+        //   label: 'GitHub',
+        //   position: 'right',
+        // },
         {
           href: 'https://github.com/papermanager/papermanager',
-          label: 'GitHub',
           position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository'
         },
       ],
     },
