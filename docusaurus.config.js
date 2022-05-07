@@ -17,12 +17,18 @@ const config = {
   projectName: 'papermanager.github.io', // Usually your repo name.
   deploymentBranch: 'gh-pages',
 
+  i18n: {
+    defaultLocale: 'en-GB',
+    locales: ['en-GB']
+  },
+
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          showLastUpdateTime: false,
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/papermanager/papermanager.github.io/edit/main',
@@ -57,7 +63,6 @@ const config = {
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   ({
     metadata: [{name: 'keywords', content: 'paper manager, academic publications joomla, research publications joomla'}],
-    hideableSidebar: true,
     colorMode: {
       defaultMode: 'light',
       disableSwitch: false,
@@ -66,6 +71,11 @@ const config = {
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
+    },
+    docs: {
+      sidebar: {
+        hideable: true
+      }
     },
     navbar: {
       title: 'Paper Manager',
