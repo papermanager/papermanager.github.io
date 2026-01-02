@@ -1,6 +1,6 @@
 # Paper Manager Website
 
-This website is built using [Docusaurus 2](https://docusaurus.io/) and is hosted on GitHub Pages.
+This website is built using [Docusaurus 3](https://docusaurus.io/) and is hosted on GitHub Pages.
 
 If you seek to change something from the documentation, please refer to [the docs folder](./docs). \
 When browsing the website, you will find edit links at the bottom of the documentation pages.
